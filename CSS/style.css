@@ -1,0 +1,21 @@
+#botoes {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.espacamento {
+    margin: 5px; 
+}
+
+textarea {
+    border: 2px solid black; 
+    border-radius: 10px;
+    width: 535px;
+    height: 300px;
+    resize: none;
+}
+
+

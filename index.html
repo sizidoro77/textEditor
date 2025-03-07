@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Texto</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <div class="container text-center">
+        <h1>Editor de Texto em JavaScript e HTML</h1>
+    </div>
+
+    <div class="container text-center">
+        <div id="botoes" class="d-inline-block p-3">
+            <div id="fontes" class="btn-group">
+                <button class="btn btn-outline-dark espacamento" id="negrito" onclick="negrito()"><i class="bi bi-type-bold"></i></button>
+                <button class="btn btn-outline-dark espacamento" id="italico" onclick="italico()"><i class="bi bi-type-italic"></i></button>
+            </div>
+            <div id="alinhamento" class="btn-group">
+                <button class="btn btn-outline-dark espacamento" id="esquerda" onclick="left()"><i class="bi bi-text-left"></i></button>
+                <button class="btn btn-outline-dark espacamento" id="centro" onclick="center()"><i class="bi bi-text-center"></i></button>
+                <button class="btn btn-outline-dark espacamento" id="direita" onclick="right()"><i class="bi bi-text-right"></i></button>
+            </div>
+            <div id="transforma" class="btn-group">
+                <button class="btn btn-outline-dark espacamento" id="maiusculo" onclick="uppercase()">A</button>
+                <button class="btn btn-outline-dark espacamento" id="minusculo" onclick="lowercase()">a</button>
+                <button class="btn btn-outline-dark espacamento" id="mainMin" onclick="capitalize()">Aa</button>
+            </div>
+            <div id="limpar" class="btn-group">
+                <button class="btn btn-outline-danger espacamento" id="limparTexto" onclick="limparTexto()"><i class="bi bi-eraser-fill"></i></button>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center" id="campodeTexto">
+            <textarea id="texto" autofocus placeholder="Seu texto aqui..."></textarea>
+        </div> 
+    </div>
+   </div>
+
+    <!-- JavaScript -->
+    <script src="js/function.js"></script>
+
+</body>
+</html>
